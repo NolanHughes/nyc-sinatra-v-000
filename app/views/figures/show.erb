@@ -1,0 +1,10 @@
+<h1>Your Figure</h1>
+
+<h3>Name: <%= @figure.name %></h3>
+
+<h3>Landmarks:</h3>
+<ul>
+  <% @figure.landmarks.each do |landmark| %>
+    <li> <%= landmark.name %> </li>
+    <% end %>
+</ul>
